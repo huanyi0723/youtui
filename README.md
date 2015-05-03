@@ -57,6 +57,7 @@ android:launchMode="singleTop"
 android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 
 - 4 分享代码流程
+```java
 //初始化代码
 protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
@@ -65,15 +66,19 @@ YtTemplate.init(this);/*初始化友推*/
 /*集成检测，检测集成过程中是否有错误，检测完成后，请删除该代码或参数设为false*/
 YtTemplate.checkConfig(true); 
 }
+```
 
+```java
 //释放内存代码
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        
-        // Release the youtui memory resources
-        YtTemplate.release(this);
-    }
+		@Override
+		public void onDestroy() {
+		super.onDestroy();       
+		// Release the youtui memory resources
+		YtTemplate.release(this);
+		}
+
+```
+
 
 //设置要分享的数据
 创建ShareData实例，调用该实例的set方法设置自己需要分享的数据，关于该实例具体内容见下文，
@@ -87,6 +92,8 @@ imageUrl			待分享网络图片url，建议使用网络图片分享
 description			待分享内容的描述
 title				待分享内容的标题
 targetUrl			待分享内容的跳转链接
+
+```java
 //代码示例
 ShareData shareData = new ShareData();
 shareData.setIsAppShare(false);
@@ -96,6 +103,7 @@ shareData.setDescription("友推积分组件");
 shareData.setText("通过友推积分组件，开发者几行代码就可以为应用添加分享送积分功能，并提供详尽的后台统计数据，除了本身具备的分享功能外，开发者也可将积分功能单独集成在已有分享组件的app上，快来试试吧 http://youtui.mobi");
 shareData.setTargetUrl("http://youtui.mobi/");
 shareData.setImageUrl("http://youtui.mobi/media/image/youtui.png");
+```
 
 因为各个平台的分享限制，请分享时尽量分享图片、设置跳转链接。各平台的分享限制详细如下：
 1) Facebook
@@ -105,6 +113,7 @@ shareData.setImageUrl("http://youtui.mobi/media/image/youtui.png");
 文字内容长度不能超过140个字符
 支持参数：imageUrl、imagePath、text、targetUrl
 
+```java
 //调用友推分享推荐组件
 /*创建分享的模板，第一个参数为activity,第二个参数为分享窗口样式，第三个参数为是否需要积分*/
 YtTemplate template = new YtTemplate(this, YouTuiViewType.WHITE_GRID, false);
@@ -135,3 +144,4 @@ public void onCancel() {
 YtLog.w("Canceling, Done...");
 }
 };
+```
