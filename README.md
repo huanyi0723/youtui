@@ -1,7 +1,6 @@
 # 友推分享文档
--分享的步骤如下
 
-1. 社交平台appkey Facebook,授权时使用SSO免登授权方式，需要验证keyhash
+- 1.社交平台appkey Facebook,授权时使用SSO免登授权方式，需要验证keyhash
 keyhash可以在CMD使用命令获取，也可以运行以下代码获取：
 ```java
 public String getKeyHash(Context context, String packageName){
@@ -21,7 +20,7 @@ return null;
 }
 ```
 
-2. 在AndroidManifest.xml 注册权限
+- 2.在AndroidManifest.xml 注册权限
 ```xml
 <!-- 检测网络状态 -->
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -39,7 +38,7 @@ return null;
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 ```
 
-3. 在 AndroidManifest.xml 注册需要的Activity
+- 3.在 AndroidManifest.xml 注册需要的Activity
 ```xml
 <!-- 友推渠道号，应用名(英文或拼音)+"_yt"，如：“jd_yt”，用于识别通过友推活动下载的应用，请正确填写，否则无法正确统计 -->
 <meta-data
@@ -60,7 +59,7 @@ android:launchMode="singleTop"
 android:theme="@android:style/Theme.Translucent.NoTitleBar" />
 ```
 
-4. 分享代码流程
+- 4.分享代码流程
 ```java
 //初始化代码
 protected void onCreate(Bundle savedInstanceState) {
@@ -74,28 +73,27 @@ YtTemplate.checkConfig(true);
 
 ```java
 //释放内存代码
-		@Override
-		public void onDestroy() {
-		super.onDestroy();       
-		// Release the youtui memory resources
-		YtTemplate.release(this);
-		}
+@Override
+public void onDestroy() {
+super.onDestroy();       
+// Release the youtui memory resources
+YtTemplate.release(this);
+}
 
 ```
 
-
-//设置要分享的数据
-创建ShareData实例，调用该实例的set方法设置自己需要分享的数据，关于该实例具体内容见下文，
-如果只是分享应用则只需要设置setIsAppShare(true) 就可以分享应用在友推后台填写的信息和下载链接。
-ShareData 包含的字段：
-setIsAppShare		判断是否为分享应用，如果是应用分享，分享的数据需要在友推后台配置
-setShareType		分享格式，支持文字、图片、图文分享
-text				待分享的文字
-imagePath			待分享的本地图片地址
-imageUrl			待分享网络图片url，建议使用网络图片分享
-description			待分享内容的描述
-title				待分享内容的标题
-targetUrl			待分享内容的跳转链接
+- 5.设置要分享的数据
+- 创建ShareData实例，调用该实例的set方法设置自己需要分享的数据，关于该实例具体内容见下文，
+- 如果只是分享应用则只需要设置setIsAppShare(true) 就可以分享应用在友推后台填写的信息和下载链接。
+- ShareData 包含的字段：
+- setIsAppShare		判断是否为分享应用，如果是应用分享，分享的数据需要在友推后台配置
+- setShareType		分享格式，支持文字、图片、图文分享
+- text				待分享的文字
+- imagePath			待分享的本地图片地址
+- imageUrl			待分享网络图片url，建议使用网络图片分享
+- description			待分享内容的描述
+- title				待分享内容的标题
+- targetUrl			待分享内容的跳转链接
 
 ```java
 //代码示例
@@ -109,15 +107,15 @@ shareData.setTargetUrl("http://youtui.mobi/");
 shareData.setImageUrl("http://youtui.mobi/media/image/youtui.png");
 ```
 
-因为各个平台的分享限制，请分享时尽量分享图片、设置跳转链接。各平台的分享限制详细如下：
-1) Facebook
-分享图片时需设置网络图片imageUrl
-支持参数：imageUrl、text、targetUrl
-2) Twitter
-文字内容长度不能超过140个字符
-支持参数：imageUrl、imagePath、text、targetUrl
+- 因为各个平台的分享限制，请分享时尽量分享图片、设置跳转链接。各平台的分享限制详细如下：
+- 1) Facebook
+- 分享图片时需设置网络图片imageUrl
+- 支持参数：imageUrl、text、targetUrl
+- 2) Twitter
+- 文字内容长度不能超过140个字符
+- 支持参数：imageUrl、imagePath、text、targetUrl
 
-5. 调用友推分享推荐组件
+- 5.调用友推分享推荐组件
 ```java
 /*创建分享的模板，第一个参数为activity,第二个参数为分享窗口样式，第三个参数为是否需要积分*/
 YtTemplate template = new YtTemplate(this, YouTuiViewType.WHITE_GRID, false);
