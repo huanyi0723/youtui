@@ -3,7 +3,7 @@
 
 - 1 社交平台appkey Facebook,授权时使用SSO免登授权方式，需要验证keyhash
 keyhash可以在CMD使用命令获取，也可以运行以下代码获取：
-- 
+```java
 public String getKeyHash(Context context, String packageName){
 try {
 PackageInfo info = context.getPackageManager()
@@ -19,9 +19,10 @@ return Base64.encodeToString(md.digest(), Base64.DEFAULT);
 }
 return null;
 }
-
+```
 
 - 2 在AndroidManifest.xml 注册权限
+```xml
 <!-- 检测网络状态 -->
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 <!-- 获取mac地址作为用户的备用唯一标识 -->
@@ -36,6 +37,7 @@ return null;
 <uses-permission android:name="android.permission.INTERNET" />
 <!-- 用于读取sd卡图片 -->
 <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+```
 
 - 3 在 AndroidManifest.xml 注册需要的Activity
 <!-- 友推渠道号，应用名(英文或拼音)+"_yt"，如：“jd_yt”，用于识别通过友推活动下载的应用，请正确填写，否则无法正确统计 -->
