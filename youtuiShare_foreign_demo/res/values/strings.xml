@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">友推SDK</string>
+    
+     <string name="title">友推分享</string>
+     <string name="des">友推分享描述</string>
+     <string name="text">通过友推积分组件，开发者几行代码就可以为应用添加分享送积分功能，并提供详尽的后台统计数据，除了本身具备的分享功能外，开发者也可将积分功能单独集成在已有分享组件的app上，快来试试吧!</string>
+    
+    <string name="white_list">友推模板-白色列表</string>
+    <string name="blank_grid">友推模板-黑色网格</string>
+    <string name="white_grid">友推模板-白色九宫格</string>
+    <string name="white_grid_center">友推模板-白色九宫格(居中)</string>
+    <string name="share_type">分享类型:</string>
+    <string name="points_center">积分中心</string>
+    <string name="points_check">积分查询</string>
+    <string name="points_add">添加积分</string>
+    <string name="points_reduce">减少积分</string>
+    <string name="points_giving">赠送积分</string>
+    <string name="login_hint">第三方登录(左右滑动):</string>
+    <string name="sharetype_text">文字</string>
+    <string name="sharetype_image">图片</string>
+    <string name="sharetype_imageandtext">图文</string>
+    
+</resources>

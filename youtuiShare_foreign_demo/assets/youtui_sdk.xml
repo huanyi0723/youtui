@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<KeyInfo>
+
+    <!-- The registration information sharing platform, must fill in the correct information registered in the corresponding platform, 
+    	 otherwise the application cannot complete authorization, cannot share, enable attribute determines whether to share the platform 
+   		 
+   		 RedirectUrl：Authorization page callback (when the platform has this field, you must set up)
+   	 	 
+   	 	 AppId、AppKey、AppSecret are platform foreign need to set up field, which is when you need to what set
+   	 	
+    	 the registered address of youtui sdk: http://youtui.mobi/
+    	 
+    	 Application website for developers ：
+    	 Facebook :			https://developers.facebook.com/
+    	 Twitter :			https://dev.twitter.com/
+    	 Tumblr :			https://www.tumblr.com/developers
+    	 Instagram :		http://instagram.com/developer
+    	 Linkedin :			https://developer.linkedin.com/
+    	 Flickr :			https://www.flickr.com/services/api/
+    	 VKontakte :		http://vk.com/dev
+    	 Pinterest :		https://developers.pinterest.com/
+    -->
+    <YouTui AppKey="516291" />
+    
+	<Facebook
+        AppId="1487266931559717"
+        AppSecret="99116f4a378a5a1cf0b7dd662c7a5769"
+        RedirectUrl="http://youtui.mobi/"
+        Enable="true" />
+	
+	<Twitter
+        AppId="12svxlKe6TbPNsYD9sJq3qdP1"
+        AppSecret="VoS7nKFDnM5F7IuWjDUSFvfQZg738TCVOZ1EQH8bdr2ROGNyGz"
+        RedirectUrl="http://youtui.mobi/"
+        Enable="true" />
+	
+	<!--  
+	
+	<Tumblr
+        AppId="D6ThtzD4bZfi65pxXgvGTJxEtqyvNxPImdfYgCq3CoJ5FcCHBL"
+        AppSecret="DOcBMUSX2Q7yPQgsYPnJb8aeSok5086WjO0MOMroDMAhN15b47"
+        RedirectUrl="http://youtui.mobi/"
+        Enable="false" />
+	
+	<!-- if want to authorize must have appid/appsecret/redirecturl, if only share information, can be empty -->
+	<Instagram
+        AppId="7c54e88c46494b03b9782edc176e4c69"
+        AppSecret="405df5012d5244e2b34e5c3e3874bf25"
+        RedirectUrl="http://youtui.mobi/"
+        Enable="false" />
+	
+	<Linkedin
+        AppId="7550jkyp3ohavy"
+        AppSecret="84jCbEwiLFuOsoBy"
+        RedirectUrl="http://youtui.mobi/"
+        Enable="false" />
+	
+	<Flickr
+        AppId="8b0484504e74dee8e82bfaf5c00ad368"
+        AppSecret="83caf5e72cdb846b"
+        RedirectUrl="http://youtui.mobi/"
+        Enable="false" />
+	
+	<VKontakte 
+        AppId="4685099"
+        AppSecret="abRJNfMsTTHZKDL5x7od"
+        Enable="false" />
+	
+	<Pinterest 
+        AppId="1442115"
+        Enable="false" />
+
+    <WhatsApp Enable="false" />
+    
+    <Line Enable="false" />
+    
+    <Message Enable="false" />
+
+    <Email Enable="false" />
+
+    <CopyLink Enable="false" />
+
+    <More Enable="false" />
+    
+    -->
+</KeyInfo>

@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Fri May 09 09:29:27 CST 2014
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=youtui-lib_fat.jar
+manifest.mergeall=true
+manifest.mainclass=
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=<po|youtui-lib>
+includes=<inc|youtui-lib/res>

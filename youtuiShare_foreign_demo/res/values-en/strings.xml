@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YoutuiSDK</string>
+    
+    <string name="white_list">Youtui Template - White List</string>
+    <string name="blank_grid">Youtui Template - Blank Grid</string>
+    <string name="white_grid">Youtui Template - White Grid</string>
+    <string name="white_grid_center">Youtui Template - White Grid(Center)</string>
+    <string name="share_type">Share type:</string>
+    <string name="points_center">Points center</string>
+    <string name="points_add">Add Points </string>
+    <string name="points_check">Check Points</string>
+    <string name="points_reduce">Reduce Points</string>
+    <string name="points_giving">Give Points</string>
+    <string name="login_hint">Third-party login(Sliding around):</string>
+    <string name="sharetype_text">Text</string>
+    <string name="sharetype_image">Image</string>
+    <string name="sharetype_imageandtext">Image And Text</string>
+    
+    <string name="title">Youtui Share</string>
+    <string name="des">Youtui integral components, rapid integration</string>
+    <string name="text">Components, through the integration of the friends push developers to add a few lines of code for application sharing send integral function, and provide detailed background statistics, besides itself have sharing function, developers can also integrate separate integral function on existing share components of app, come and try it on!</string>
+</resources>
