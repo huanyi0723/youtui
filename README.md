@@ -1,4 +1,4 @@
-# 友推分享文档
+# 友推分享文档 sdk下载地址（http://youtui.oss-cn-hangzhou.aliyuncs.com/download/android/youtuiShare_foreign_android_v1.0.0.zip）
 
 - 1.社交平台appkey Facebook,授权时使用SSO免登授权方式，需要验证keyhash
 keyhash可以在CMD使用命令获取，也可以运行以下代码获取：
