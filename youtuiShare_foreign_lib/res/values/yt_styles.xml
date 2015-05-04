@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="YtSharePopupAnim">
-        <item name="android:windowEnterAnimation">@anim/yt_sharepopup_fade_in</item>
-        <item name="android:windowExitAnimation">@anim/yt_sharepopup_fade_out</item>
-    </style>
-</resources>
