@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/linear_interpolator"
+    android:duration="800"
+    android:fromYDelta="100%p"
+    android:toYDelta="0%p">
+</translate><!-- From: file:/D:/Github/youtui/youtuiShare_foreign_lib/res/anim/yt_sharepopup_fade_in.xml --><!-- From: file:/D:/Github/youtui/youtuiShare_foreign_lib/build/intermediates/bundles/debug/res/anim/yt_sharepopup_fade_in.xml -->

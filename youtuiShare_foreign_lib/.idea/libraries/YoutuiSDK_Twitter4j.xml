@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="YoutuiSDK_Twitter4j">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/YoutuiSDK_Twitter4j.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

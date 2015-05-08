@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/Github/youtui/youtuiShare_foreign_lib/res/values-en/yt_strings.xml -->
+    <eat-comment/>
+    <string name="youtui_appId">1</string>
+    <string name="yt_authcancel">Authorization to cancel</string>
+    <string name="yt_authfailed">Authorization failure</string>
+    <string name="yt_authing">Authorizing</string>
+    <string name="yt_authlogincancel">Login authorization to cancel</string>
+    <string name="yt_authsuccess">Authorization success</string>
+    <string name="yt_brush">Brush</string>
+    <string name="yt_cancel">Cancel</string>
+    <string name="yt_capture_edit">Capture Edit</string>
+    <string name="yt_chooseemail">Please select a mail delivery software</string>
+    <string name="yt_clear">Clear</string>
+    <string name="yt_color">Color</string>
+    <string name="yt_connecterror">Connect to a server error</string>
+    <string name="yt_copyfail">Failed to copy, please manually copy</string>
+    <string name="yt_copylink">Links</string>
+    <string name="yt_copysuccess">Copy success</string>
+    <string name="yt_description">description</string>
+    <string name="yt_email">Email</string>
+    <string name="yt_facebook">Facebook</string>
+    <string name="yt_flicking_share">Flicking A Share</string>
+    <string name="yt_flickr">Flickr</string>
+    <string name="yt_getsharecontent_fail">Failed to get share content...</string>
+    <string name="yt_instagram">Instagram</string>
+    <string name="yt_instagram_not_install">Instagram is not installed, or version is too low</string>
+    <string name="yt_learn_points_activities">Learn Points Activities</string>
+    <string name="yt_line">Line</string>
+    <string name="yt_line_not_install">Line is not installed, or version is too low</string>
+    <string name="yt_linkedin">Linkedin</string>
+    <string name="yt_loading">Loading...</string>
+    <string name="yt_logincancel">Login cancel</string>
+    <string name="yt_loginsuccess">Login successfully, please click on the share</string>
+    <string name="yt_man">Male</string>
+    <string name="yt_message">Message</string>
+    <string name="yt_more">More</string>
+    <string name="yt_nonetwork">No Internet connection, please check your network</string>
+    <string name="yt_nopic">Share photos is not found, please reinstall share image url or path</string>
+    <string name="yt_notargeturl">Share the link is empty</string>
+    <string name="yt_pinterest">Pinterest</string>
+    <string name="yt_pinterest_not_install">Pinterest is not installed, or version is too low</string>
+    <string name="yt_pointcharge">Points Exchange</string>
+    <string name="yt_points_activities">Points Activities</string>
+    <string name="yt_reauth">Authorization failed, please again to obtain authorization</string>
+    <string name="yt_reconnect">Abnormal network connection, whether or not to connect?</string>
+    <string name="yt_rectangle">Rect</string>
+    <string name="yt_save">Save</string>
+    <string name="yt_savecap">Screenshots file saved to SDCard/youtui directory</string>
+    <string name="yt_screencap">Screenshot</string>
+    <string name="yt_share">Share</string>
+    <string name="yt_share_cancel">Share to cancel</string>
+    <string name="yt_share_fail">Share the failure</string>
+    <string name="yt_share_suc">Share success</string>
+    <string name="yt_share_to">Share to</string>
+    <string name="yt_shareing">Sharing...</string>
+    <string name="yt_sharepic">Share Images</string>
+    <string name="yt_thickness">Sizer</string>
+    <string name="yt_tumblr">Tumblr</string>
+    <string name="yt_twitter">Twitter</string>
+    <string name="yt_unknownfilesize">The file size cannot be obtained </string>
+    <string name="yt_vkontakte">VKontakte</string>
+    <string name="yt_whatsapp">WhatsApp</string>
+    <string name="yt_whatsapp_not_install">Line is not installed, or version is too low</string>
+    <string name="yt_woman">Female</string>
+</resources>

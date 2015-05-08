@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="YoutuiSDK_Template">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/YoutuiSDK_Template.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

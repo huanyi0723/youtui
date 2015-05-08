@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="YoutuiSDK_Scribe">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/YoutuiSDK_Scribe.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
