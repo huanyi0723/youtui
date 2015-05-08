@@ -148,3 +148,27 @@ YtLog.w("Canceling, Done...");
 }
 };
 ```
+
+
+- 5.facebook分享就是一个坑啊
+- 首先要注册开发者账号 开发模式下只能用自己的账户分享 其它账号无法分享
+- 开发者模式下 keystore要与官网里面的key hashes对应起来 key hashes可以用代码生成
+```java
+public String getKeyHash(Context context, String packageName){
+		try {
+		PackageInfo info = context.getPackageManager()
+		.getPackageInfo(packageName, PackageManager.GET_SIGNATURES);
+		for (Signature signature : info.signatures) {
+		MessageDigest md = MessageDigest.getInstance("SHA");
+		md.update(signature.toByteArray());
+		return Base64.encodeToString(md.digest(), Base64.DEFAULT);
+		}
+		} catch (NameNotFoundException e) {
+
+		} catch (NoSuchAlgorithmException e) {
+		}
+		return null;
+		}
+```
+
+- 进入产品模式需要审核 审核未通过前 其他账户可以授权成功 但是分享失败
